@@ -5,6 +5,10 @@ footer {
 }
 
 /* Hero section*/
+.hero-section {
+  background-color: #ccc;
+}
+
 .hero-text {
   font-weight: 600;
   font-size: 11px;
@@ -46,8 +50,32 @@ footer {
 }
 
 /* About section */
+.about-section {
+  padding-top: 158px;
+  padding-bottom: 100px;
+}
+
+.about-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-image-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-image-item {
+  margin-right: 30px;
+}
+
+.about-image-item:last-child {
+  margin-right: 0;
+}
 
 .about-title {
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 42px;
@@ -56,6 +84,8 @@ footer {
 }
 
 .about-main-text {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.17;
@@ -65,6 +95,8 @@ footer {
 }
 
 .about-secondary-text {
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
@@ -72,6 +104,8 @@ footer {
 }
 
 .about-description {
+  margin-bottom: 40px;
+
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -83,7 +117,22 @@ footer {
 }
 
 /* Services & Prises */
+.prises-section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  background-image: linear-gradient(
+      to bottom,
+      rgba(17, 19, 25, 0.7),
+      rgba(17, 19, 25, 0.7)
+    ),
+    url(../images/prises.jpg);
+  background-size: cover;
+}
+
 .services-text {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.17;
@@ -93,12 +142,20 @@ footer {
 }
 
 .services-title {
+  margin-bottom: 44px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: var(--white-text);
+}
+
+.tables-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .services-table {
@@ -108,7 +165,69 @@ footer {
   color: var(--grey-text);
 }
 
+.services-table-left {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-table-right {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.button-container {
+  text-align: center;
+}
+
+.ordering-button-filled {
+  background-color: var(--accent);
+}
+
 /* Advantages */
+.advantages-section {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.advantages-flex {
+  display: flex;
+  padding-left: 115px;
+  padding-right: 85px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 370px;
+  /* margin-left: 100px; */
+  margin-right: 130px;
+}
+
+.advantages-item {
+  padding: 20px 24px;
+  max-width: 170px;
+  max-height: 133px;
+  text-align: center;
+
+  background-color: var(--grey-background);
+}
+
+.advantages-item:nth-child(1) {
+  margin-right: 30px;
+}
+
+.advantages-item:nth-child(2) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-child(3) {
+  margin-right: 30px;
+  margin-top: -30px;
+}
+
+.advantages-item:nth-child(4) {
+  padding: 20px;
+}
+
 .advantages-number {
   font-weight: bold;
   font-size: 42px;
@@ -123,6 +242,8 @@ footer {
 }
 
 .advantages-text {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
@@ -131,6 +252,8 @@ footer {
 }
 
 .advantages-title {
+  margin-bottom: 20px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 42px;
@@ -145,6 +268,10 @@ footer {
 }
 
 /* Team */
+.team-container {
+  background-color: var(--grey-background);
+}
+
 .team-text {
   font-weight: 600;
   font-size: 11px;
@@ -161,6 +288,10 @@ footer {
   letter-spacing: 0.05em;
 }
 
+.team-list {
+  display: flex;
+}
+
 .team-name {
   font-size: 18px;
   line-height: 1.39;
@@ -175,10 +306,74 @@ footer {
 }
 
 /* Works */
+
 .works-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.works-list {
+  display: flex;
+}
+
+/* Online */
+.online-container {
+  display: flex;
+}
+
+.online-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--white-text);
+}
+
+.sending-button {
+  border: none;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--white-text);
+  background-color: transparent;
+}
+
+.sending-button:hover,
+.sending-button:focus {
+  background-color: var(--accent);
+}
+
+.online-contacts-item {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--grey-text);
+}
+
+.mail-underlined {
+  text-decoration: underline;
+}
+
+.online-schedule {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-text);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  letter-spacing: 0.2em;
+  color: var(--grafite);
 }
