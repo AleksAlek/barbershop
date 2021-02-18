@@ -269,10 +269,14 @@ footer {
 
 /* Team */
 .team-container {
+  padding-top: 130px;
+  padding-bottom: 62px;
   background-color: var(--grey-background);
 }
 
 .team-text {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.37;
@@ -281,6 +285,8 @@ footer {
 }
 
 .team-title {
+  margin-bottom: 44px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 42px;
@@ -292,17 +298,70 @@ footer {
   display: flex;
 }
 
-.team-name {
+.team-thumb {
+  margin-right: 30px;
+  max-width: 370px;
+}
+
+.team-thumb:last-child {
+  margin-right: 0;
+}
+
+.team-content {
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.person-name {
+  margin-bottom: 8px;
+
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 0.02em;
 }
 
 .person-position {
+  margin-bottom: 30px;
+
   font-size: 14px;
   line-height: 1.36;
   letter-spacing: 0.02em;
-  color: var(--orange);
+  color: var(--accent);
+}
+
+.person-links {
+  display: flex;
+  justify-content: center;
+}
+
+.person-links-item {
+  margin-right: 10px;
+}
+
+.person-links-item:last-child {
+  margin-right: 0;
+}
+
+.icon-background {
+  padding: 12px;
+
+  background-color: var(--white-background);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--grafite);
+}
+
+.icon-background:hover,
+.icon-background:focus {
+  color: var(--accent);
+}
+
+.social-icon {
+  fill: currentColor;
 }
 
 /* Works */
