@@ -346,7 +346,9 @@ footer {
 }
 
 .icon-background {
-  padding: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--white-background);
   width: 44px;
